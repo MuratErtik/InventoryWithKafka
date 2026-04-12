@@ -13,4 +13,5 @@ public class OrderPlacedEvent {
 
     private String product;
     private Double price;
+    private Long orderId;
 }
