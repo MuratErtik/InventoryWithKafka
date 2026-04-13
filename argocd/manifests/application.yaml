@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: InventoryWithKafka
+  project: inventory-with-kafka
   source:
     repoURL: https://github.com/MuratErtik/InventoryWithKafka
     path: charts/inventory
@@ -31,7 +31,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: InventoryWithKafka
+  project: inventory-with-kafka
   source:
     repoURL: https://github.com/MuratErtik/InventoryWithKafka
     path: charts/shipping
@@ -56,7 +56,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: InventoryWithKafka
+  project: inventory-with-kafka
   source:
     repoURL: https://github.com/MuratErtik/InventoryWithKafka
     path: charts/order
