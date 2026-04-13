@@ -21,4 +21,6 @@ public class Order {
     private String product;
 
     private Double price;
+
+    private String status;
 }
