@@ -30,10 +30,10 @@ jobs:
           distribution: "corretto" #amazon java dagitimi
 
       - name: Build
-        working-directory: ${{matrix.image_name}} #nereler icin yapacak bunu
-        run:
-          ./gradlew bootJar 
-          mv build/libs/$(ls build/libs) app.jar #uygulamanin jar dosyasini rename ediyor
+        working-directory: ${{matrix.image_name}}
+        run: |
+          ./gradlew bootJar
+          mv build/libs/$(ls build/libs | head -1) app.jar  #uygulamanin jar dosyasini rename ediyor
 
       - name: Log in to Github Container Registry
         uses: docker/login-action@v2
