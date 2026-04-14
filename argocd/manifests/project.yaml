@@ -11,6 +11,7 @@ spec:
   # Allow manifests to deploy only from specific Git repos
   sourceRepos:
     - "https://github.com/MuratErtik/InventoryWithKafka"
+    - "https://charts.bitnami.com/bitnami"
 
   # Only permit applications to deploy to the prod namespace in the same cluster
   destinations:
