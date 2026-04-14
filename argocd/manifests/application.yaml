@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://charts.bitnami.com/bitnami
     chart: postgresql
-    targetRevision: "16.x.x"
+    targetRevision: "15.5.38"
     helm:
       parameters:
         - name: auth.database
@@ -36,7 +36,7 @@ spec:
   source:
     repoURL: https://charts.bitnami.com/bitnami
     chart: kafka
-    targetRevision: "31.x.x"
+    targetRevision: "30.x.x"
     helm:
       parameters:
         - name: listeners.client.protocol
