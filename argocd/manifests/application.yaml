@@ -8,13 +8,9 @@ metadata:
 spec:
   project: inventory-with-kafka
   source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: postgresql
-    targetRevision: "15.5.38"
-    helm:
-      parameters:
-        - name: auth.database
-          value: microservices
+    repoURL: https://github.com/MuratErtik/InventoryWithKafka
+    path: charts/postgres
+    targetRevision: "HEAD"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: argocd
@@ -34,13 +30,9 @@ metadata:
 spec:
   project: inventory-with-kafka
   source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: kafka
-    targetRevision: "30.x.x"
-    helm:
-      parameters:
-        - name: listeners.client.protocol
-          value: PLAINTEXT
+    repoURL: https://github.com/MuratErtik/InventoryWithKafka
+    path: charts/kafka
+    targetRevision: "HEAD"
   destination:
     server: "https://kubernetes.default.svc"
     namespace: argocd
