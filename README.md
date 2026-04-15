@@ -130,25 +130,6 @@ Database credentials are pulled from **HashiCorp Vault** using the **External Se
 
 ---
 
-## Running Locally
-
-Start the infrastructure with Docker Compose:
-
-```bash
-docker-compose up -d
-```
-
-This starts **Zookeeper**, **Kafka**, **Kafka UI** (at `localhost:8080`), and **PostgreSQL**.
-
-Then run each service with Gradle:
-
-```bash
-cd order && ./gradlew bootRun
-cd shipping && ./gradlew bootRun
-cd inventory && ./gradlew bootRun
-```
-
----
 
 ## Project Structure
 
